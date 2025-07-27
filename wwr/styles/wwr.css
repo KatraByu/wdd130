@@ -121,22 +121,21 @@ header h1 {
     display: block;
   }
 
-  .nav-links {
-    display: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    width: 100%;
-    margin-top: 1rem;
-    background-color: #36454f;
-    border-radius: 10px;
-    padding: 1rem;
-    justify-items: center;
-  }
+.nav-links {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #36454f;
+  border-radius: 10px;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  text-align: center;
+}
 
   #menu-toggle:checked + .menu-icon + .nav-links {
-    display: grid;
-  }
+  display: grid;
+}
 
   .nav-links a {
     width: 100%;
